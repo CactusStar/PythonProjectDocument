@@ -1,0 +1,37 @@
+{
+  "token": "7c32ffa3-2bee-4f7c-9251-3ab9790f3ef0",
+  "Product_id": "86751",
+  "self_login": "False",
+  "browser": "chrome",
+  "Displayed_item":[{
+    "name": "Headline"
+  },{
+    "name": "Status"
+  },{
+    "name": "When to Run"
+  },{
+    "name": "Automation Development Status"
+  },{
+    "name": "Type"
+  },{
+    "name": "CVB Products-1"
+  },{
+    "name": "Features Tested"
+    },{
+    "name": "Functional Area"
+    },{
+    "name": "Tags"
+    },{
+    "name": "ControllerType(s)"
+    },{
+    "name": "Mode"
+    },{
+    "name": "Testware Location"
+    },{
+    "name": "Description"
+    },{
+    "name": "Notes"
+    },{
+    "name": "Precondition"
+    }]
+}

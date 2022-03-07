@@ -1,0 +1,60 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://v3.bootcss.com/examples/cover/cover.css" rel="stylesheet">
+  <style>
+    .form-signin-heading{
+      text-align:center;
+    }
+    #caseid{
+      width: 40%;
+      margin:auto;
+    }
+    .container{
+      text-align: center;
+      vertical-align: middle;
+    }
+    body{
+      background-size: cover;
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+    }
+    .form-control{
+      width: 40%;
+      margin:auto;
+    }
+    #apply{
+      position: relative;
+      left: 200px;
+      top: 10px;
+    }
+  </style>
+  <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+{% block content %}
+<body background="{{ url_for('static', filename='timg.jpg') }}">
+  <div class="container">
+    <form class="form-signin" method="post">
+      <h2 class="form-signin-heading">Convert Test case</h2>
+      <label for="caseid" class="sr-only">Caseid</label>
+      <input type="caseid" id="caseid" name="caseid" class="form-control" placeholder="8 numberic id" required="" autofocus="">
+      <button type="submit" class="btn btn-info" id="apply">Apply</button>
+    </form>
+    <h2 class="form-signin-heading">Search History</h2>
+    <select id="my-select" class="form-control">
+      {% for post in posts %}
+        <option bianhao="${wl.matnr }">{{ post['caseid'] }}</option>
+      {% endfor %}
+    </select>
+  </div>
+</body>
+<script type="text/javascript">
+  $("#my-select").on("change",function () {
+    $("select option:selected").each(function () {
+        $("#caseid").val($(this).text());
+    })
+ });
+</script>
+{% endblock %}

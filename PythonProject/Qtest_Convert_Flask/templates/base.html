@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="https://v3.bootcss.com/examples/cover/cover.css" rel="stylesheet">
+    </head>
+<body>
+    <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div class="inner cover">
+                    <h1 class="cover-heading">Click Start to convert qtest case</h1>
+                    <p class="lead">
+                        <button class="btn btn-lg btn-default" onclick='location.href=("{{ url_for("convert.input_id") }}")'>Start</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
